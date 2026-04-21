@@ -86,5 +86,24 @@ Follow these steps to clone the repository and run the project locally.
 ### 1. Clone the Repository
 Open your terminal and run the following commands to download the project:
 ```bash
-git clone https://github.com/saralev111/SmartParking.git
+git clone [https://github.com/saralev111/SmartParking.git](https://github.com/saralev111/SmartParking.git)
 cd SmartParking
+
+2. Run the Backend (.NET Core)
+Navigate to the backend directory, install the required dependencies, and apply the database migrations:
+
+Bash
+dotnet restore
+dotnet ef database update
+dotnet run
+3. Run the Frontend (React / Bun)
+Open a new terminal window, navigate to the frontend directory, install dependencies, and start the development server:
+
+Bash
+cd frontend
+npm install
+npm run dev
+🚀 Known Issues & Future Improvements
+Concurrency Handling in Spot Allocation: Currently, under extreme high load, a race condition might occur if two requests attempt to book the exact same parking spot at the exact same millisecond.
+
+Planned Fix: Implement Optimistic Concurrency using Entity Framework Core (e.g., adding a [Timestamp] token to the Spot entity). This will catch a DbUpdateConcurrencyException and ensure robust data integrity during parallel requests.
