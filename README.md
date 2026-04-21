@@ -92,8 +92,8 @@ The system includes three main entities:
 
 ## Developed By
 
-* **Sara Levin**  
-* **Hadas Homri**
+* **Hadas Chomri**  
+* **Sara Levin**
 
 ---
 
