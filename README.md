@@ -92,7 +92,7 @@ The system includes three main entities:
 
 ## Developed By
 
-* **Hadas Chomri**  
+* **Hadas Homri**  
 * **Sara Levin**
 
 ---
